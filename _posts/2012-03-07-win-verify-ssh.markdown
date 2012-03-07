@@ -37,18 +37,23 @@ We display SSH key fingerprints on GitHub along with the key's title:
 
 ## Next: Find and Compare Fingerprints
 
-First, download the <strong>GHKeyBrowser</strong> program from the following
-location:
+There are several programs that can be used for getting the fingerprint of an SSH key.
 
+GitHub provides one program, <strong>GHKeyBrowser</strong>, which can be downloaded from
 <a href="https://s3.amazonaws.com/github-assets/GHKeyBrowser.exe">https://s3.amazonaws.com/github-assets/GHKeyBrowser.exe</a>
 
-This is standalone executable provided by GitHub that will list all your ssh
-keys with fingerprints.
+The program will list all your ssh keys with fingerprints.
 
 ![](https://img.skitch.com/20120307-gkb7f2bb9ui1r6s9un8jq8k4iy.png)
 
+Another program is <strong>PuTTYgen</strong>, which can be downloaded from 
+<a href="http://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe">http://the.earth.li/~sgtatham/putty/latest/x86/puttygen.exe</a>
+
+Just load the local key file (containing the secret key) into the program and you will see the fingerprint in the textbox labeled "Key fingerprint".
+
+
 Now open <https://github.com/settings/ssh> and make sure the fingerprints attached to
-your GitHub account match the fingerprints in <strong>GHKeyBrowser</strong>.
+your GitHub account match the fingerprints in <strong>GHKeyBrowser</strong> (or <strong>PuTTYgen</strong>).
 
 ![](https://img.skitch.com/20120307-du7pgft9s9nbm4gwm8isyp7gwr.png)
 
